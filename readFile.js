@@ -1,11 +1,9 @@
 const fs = require("fs");
 
-const filePath = "./data2.csv";
+const filePath = "./data.csv";
 
 let data = fs.readFileSync(filePath, "utf-8");
 data = data.trim().split("\n");
-
-const headers = data[0].split(",");
 
 const rows = data.slice(1).map((row) => row.split(","));
 
