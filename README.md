@@ -2,13 +2,16 @@
 
 This repository contains solutions for analyzing the sales data of an ice cream parlour. The dataset is stored in a CSV file, and each problem has been solved in an individual JavaScript file. The data is read from the CSV file using the `readFile.js` file.
 
-## File Structure
+## File Descriptions
 
-├── data.csv # Input data file containing sales records 
-├── readFile.js # Reads and parses the CSV file into a usable format 
-├── totalSales.js # Calculates the total sales of the store 
-├── monthWiseSales.js # Calculates month-wise sales totals 
-├── mostPopularItemPerMonth.js # Identifies the most popular item (by quantity) for each month ├── highestRevenue.js # Finds the items generating the most revenue in each month ├── mostPopularItem.js # Provides stats (min, max, average orders) for the most popular item in each month ├── README.md # Documentation for the repository
+- **data.csv**:  Contains sales data including item names, quantities, prices, and timestamps. This file serves as the input for the analysis scripts.
+- **readFile.js**:  Reads the `data.csv` file, parses its content, and converts it into a usable JavaScript object/array format for further processing.
+- **totalSales.js**:  Processes the parsed data to calculate and return the total sales amount for the store.
+- **monthWiseSales.js**:  Computes the total sales for each month, providing a breakdown of revenue by month.
+- **mostPopularItemPerMonth.js**:  Analyzes sales data to determine the most popular item (based on quantity sold) for each month.
+- **highestRevenue.js**:  Identifies the items that generate the most revenue for each month by multiplying quantities sold by item price.
+- **mostPopularItem.js**:  Provides detailed statistics (minimum, maximum, and average orders) for the most popular item across all months.
+- **README.md**:  This documentation file, which explains the project structure, functionality, and usage.
 
 
 ## Dataset Format
@@ -36,4 +39,8 @@ The data in `data.csv` has the following structure:
    ```bash
    git clone https://github.com/your-username/ice-cream-sales-analysis.git
    cd ice-cream-sales-analysis
-2.Place the data.csv file in the root directory.
+2. Place the data.csv file in the root directory
+3. Run each problem script individually:
+  ```bash
+  node filename.js
+  
